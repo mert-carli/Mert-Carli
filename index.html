@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mevlana Mert Çarlı - Portfolio</title>
+  <link rel="icon" type="image/png" href="img/M.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/M.png" alt="M Logo" class="logo-img">
+      <span class="logo-text">Mevlana Mert Çarlı</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="code-rain-toggle" class="code-icon-btn" title="Toggle Code Rain">&lt;/&gt;</button></li>
+      <li><button id="meteor-shower-toggle" class="meteor-icon-btn" title="Toggle Meteor Shower">☄️</button></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home" class="section home-section">
+    <div class="hero-content">
+      <h1 class="typewriter-title">Welcome to my Portfolio</h1>
+      <div class="typewriter-container">
+        <p class="subtitle typewriter-text" id="typewriterText"></p>
+        <span class="typewriter-cursor">|</span>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section about-section">
+    <div class="about-content">
+      <div class="about-header">
+        <div class="profile-image">
+          <img src="img/mert2.jpg" alt="Mevlana Mert Çarlı" class="profile-img">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Mert.  Bilgisayar  Programcılığı  diplomasına  sahip,  sürekli  öğrenen  ve
+             üreten  bir  full-stack  düşünür.
+             Tutkum;  minimalist  arayüzler  tasarlamak  ve  pratik  yazılım  çözümleri
+             geliştirmek  (CMD/PowerShell,  ağ  araçları).
+             Müzik  (Bağlama / Gitar)  ile  yaratıcılığımı  besliyor,
+             sade  estetiği  ve  kullanıcı  dostu  yaklaşımları  her  şimde  önceliklendiriyorum.
+             Hedefim:  Kendi  işimi kurmak  ve  dijital  dünyada  özgün  bir  iz  bırakmak.
+
+HTML & CS</p>
+          <div class="skills">
+            <!-- Teknik Yetenekler -->
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C#</span>
+            <span class="skill">PowerShell</span>
+            <span class="skill">Wi-Fi & Ağ Analizi</span>
+            <span class="skill">Oyun Geliştirme</span>
+            <span class="skill">ESP8266 & Robotik</span>
+            <span class="skill">GitHub & Versiyon Kontrol</span>
+            <span class="skill">CMD & Terminal Araçları</span>
+            <span class="skill">Yazılım Tabanlı Güvenlik</span>
+            <span class="skill">Ağ ve Siber Güvenlik</span>
+            <span class="skill">Temel Elektronik & Devre</span>
+            <span class="skill">API Kullanımı & Entegrasyon</span>
+            <span class="skill">Responsive & Mobil Tasarım</span>
+            <span class="skill">Temel SEO</span>
+            
+            <!-- Tasarım Yetenekleri -->
+            <span class="skill">Logo & Kartvizit Tasarımı</span>
+            <span class="skill">Minimalist Web Tasarımı</span>
+            
+            <!-- Sanatsal Yetenekler -->
+            <span class="skill">Müzik Besteleme</span>
+            <span class="skill">Bağlama & Gitar</span>
+            <span class="skill">Video Düzenleme</span>
+            
+            <!-- Kişisel Yetenekler -->
+            <span class="skill">Yaratıcı Düşünme</span>
+            <span class="skill">Problem Çözme</span>
+            <span class="skill">Takım Çalışması</span>
+            <span class="skill">Hızlı Öğrenme</span>
+            <span class="skill">Zaman Yönetimi</span>
+            <span class="skill">Analitik Düşünme</span>
+            <span class="skill">Sunum & Görsel Anlatım</span>
+            <span class="skill">Araştırma & Gelişim</span>
+            
+            <!-- Hobiler & İlgi Alanları -->
+            <span class="skill">Basketbol</span>
+            <span class="skill">Fitness & Vücut Geliştirme</span>
+            <span class="skill">Teknoloji Takibi</span>
+            <span class="skill">Uzay & Bilim Kurgu</span>
+            <span class="skill">Donanım Montaj</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section projects-section">
+    <h2>Projelerim</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-gallery="logo">
+        <div class="project-image">
+          <div class="project-icon">
+            <img src="img/M.png" width="50" height="50" alt="icon" class="icon">
+
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Logo Tasarımlarım</h3>
+          <p>Profesyonel marka kimliği için özgün logo tasarımları.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="cards">
+        <div class="project-image">
+          <div class="project-icon">
+           <img src="img/carliinsaatonyuz.png" width="60" height="40" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Kartvizit Tasarımlarım</h3>
+          <p>Modern ve etkileyici kartvizit tasarım koleksiyonu.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="cmd">
+        <div class="project-image">
+          <div class="project-icon">
+            <img src="img/1.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>CMD Tabanlı Wi-Fi ve Ağ Analiz Aracı</h3>
+          <p>Komut satırı ile ağ analizi ve Wi-Fi güvenlik taraması.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="powershell">
+        <div class="project-image">
+          <div class="project-icon">
+          <img src="img/1.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>PowerShell Grafik Arayüzlü Ağ Aracı</h3>
+          <p>GUI ile gelişmiş ağ yönetimi ve analiz uygulaması.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="csharp-game">
+        <div class="project-image">
+          <div class="project-icon">
+             <img src="img/Powershell.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>C# Konsol Tabanlı Zeka Oyunu</h3>
+          <p>Algoritma tabanlı interaktif zeka ve strateji oyunu.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="csharp-password">
+        <div class="project-image">
+          <div class="project-icon">
+             <img src="img/mathgame5.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3>C# Şifre Güçlendirme Uygulaması</h3>
+          <p>Güvenli şifre oluşturma ve analiz etme aracı.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="music">
+        <div class="project-image">
+          <div class="project-icon">
+           <img src="img/csharp-sifre.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3>Yapay Zeka Tabanlı Müzik Üretimi</h3>
+          <p>AI ile otomatik müzik kompozisyonu ve ses sentezi. Detaylar için tıklayın.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="cosmic">
+        <div class="project-image">
+          <div class="project-icon">
+           <img src="img/CosmicDecsent0.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>4 Gezegenli Uzay Oyunu</h3>
+          <p>Çok gezegenli uzay keşif ve strateji oyunu.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="portfolio">
+        <div class="project-image">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Minimalist Portfolyo Web Sitesi</h3>
+          <p>Modern ve responsive kişisel portfolyo sitesi.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="poster">
+        <div class="project-image">
+          <div class="project-icon">
+             <img src="img/Mercan Tenis.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Afiş Tasarımı</h3>
+          <p>Yaratıcı ve çarpıcı afiş tasarım koleksiyonu.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="engelsiz">
+        <div class="project-image">
+          <div class="project-icon">
+              <img src="img/engelsiz.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Engelsiz Kariyer</h3>
+          <p>Erişilebilir kariyer platformu ve sosyal sorumluluk projesi.</p>
+        </div>
+      </div>
+      <div class="project-card" data-gallery="python-password">
+        <div class="project-image">
+          <div class="project-icon">
+            <img src="img/siffre.png" width="40" height="60" alt="icon" class="icon">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Python Tabanlı Şifre Aracı</h3>
+          <p>Python ile güvenli şifre yönetimi ve analiz sistemi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section contact-section">
+    <div class="contact-content">
+      <h2>İletişim</h2>
+      <p class="contact-subtitle">Benimle iletişime geçin, projelerinizi konuşalım!</p>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjkrdlrz" method="POST">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Ad Soyad" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+        </div>
+        <div class="form-group full-width">
+          <input type="text" id="subject" name="subject" placeholder="Konu" required>
+        </div>
+        <div class="form-group full-width">
+          <textarea id="message" name="message" placeholder="Mesajınız..." rows="5" required></textarea>
+        </div>
+        <div class="form-group full-width">
+          <button type="submit" class="submit-btn">
+            <span>Mesaj Gönder</span>
+            <div class="btn-overlay"></div>
+          </button>
+        </div>
+      </form>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon gmail-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="#EA4335"/>
+              <path d="M0 5.457v13.909c0 .904.732 1.636 1.636 1.636h3.819V11.73L12 16.64l6.545-4.91v9.273h3.819A1.636 1.636 0 0 0 24 19.366V5.457c0-2.023-2.309-3.178-3.927-1.964L18.545 4.64 12 9.548l-6.545-4.91L3.927 3.493C2.31 2.28 0 3.434 0 5.457z" fill="#FBBC05"/>
+              <path d="M0 5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457v.727L12 14.727 0 6.184v-.727z" fill="#EA4335"/>
+            </svg>
+          </span>
+          <span>carlimert489@gmail.com</span>
+        </div>
+        
+      
+      <div class="social-media">
+        <h3>Sosyal Medya</h3>
+        <div class="social-links">
+          <div class="social-item">
+            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span class="social-platform">Instagram:</span>
+            <a href="https://instagram.com/mert_carli" target="_blank" rel="noopener">mert_carli</a>
+          </div>
+          <div class="social-item">
+            <svg class="social-icon github-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span class="social-platform">GitHub:</span>
+            <a href="https://github.com/mert-carli" target="_blank" rel="noopener">mert-carli</a>
+          </div>
+          <div class="social-item">
+            <svg class="social-icon linkedin-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span class="social-platform">LinkedIn:</span>
+            <a href="https://linkedin.com/in/mert-carli" target="_blank" rel="noopener">Mert Çarlı</a>
+          </div>
+          <div class="social-item">
+            <svg class="social-icon youtube-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span class="social-platform">YouTube:</span>
+            <a href="https://youtube.com/@minimal11st" target="_blank" rel="noopener">minimal11st</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background Animation Canvas -->
+  <canvas id="background"></canvas>
+  <!-- Code Rain Canvas -->
+  <canvas id="code-rain" style="display: none;"></canvas>
+  
+  <!-- Meteor Shower Effect -->
+  <div id="meteor-shower-container" style="display: none;">
+    <div class="space-overlay"></div>
+    <div class="meteor-container"></div>
+    <div class="stars-container"></div>
+  </div>
+
+  <!-- Modal Gallery -->
+  <div id="logoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        <h3>Logo Tasarımlarım</h3>
+      </div>
+      <div class="modal-body">
+        <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+        <div class="image-container">
+          <img id="modalImage" src="" alt="Logo Tasarımı">
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+      </div>
+      <div class="modal-footer">
+        <div class="image-counter">
+          <span id="currentImage">1</span> / <span id="totalImages">8</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Gallery Modal -->
+  <div id="cardModal" class="modal">
+    <div class="modal-content">
+      <span class="close card-close">&times;</span>
+      <div class="modal-header">
+        <h3>Kartvizit Tasarımlarım</h3>
+      </div>
+      <div class="modal-body">
+        <button class="nav-btn prev-btn" id="cardPrevBtn">&#8249;</button>
+        <div class="card-container">
+          <div class="business-card" id="businessCard">
+            <div class="card-front">
+              <img id="cardFrontImage" src="" alt="Kartvizit Ön Yüz">
+            </div>
+            <div class="card-back">
+              <img id="cardBackImage" src="" alt="Kartvizit Arka Yüz">
+            </div>
+          </div>
+          <div class="flip-instruction">
+            <p>Kartı çevirmek için tıklayın</p>
+          </div>
+        </div>
+        <button class="nav-btn next-btn" id="cardNextBtn">&#8250;</button>
+      </div>
+      <div class="modal-footer">
+        <div class="image-counter">
+          <span id="currentCard">1</span> / <span id="totalCards">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CMD Poster Modal -->
+  <div id="cmdModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close cmd-close">&times;</span>
+      <div class="modal-header">
+        <h3>CMD Tabanlı Wi-Fi ve Ağ Analiz Aracı</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="posterWrapper">
+            <img id="posterImage" src="img/1.png" alt="CMD Ağ Analiz Aracı Afiş">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="zoomOut">-</button>
+          <span class="zoom-level" id="zoomLevel">100%</span>
+          <button class="zoom-btn" id="zoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="resetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PowerShell Modal -->
+  <div id="powershellModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close powershell-close">&times;</span>
+      <div class="modal-header">
+        <h3>PowerShell Grafik Arayüzlü Ağ Aracı</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="powershellWrapper">
+            <img id="powershellImage" src="img/Powershell.png" alt="PowerShell Ağ Aracı">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="powershellZoomOut">-</button>
+          <span class="zoom-level" id="powershellZoomLevel">100%</span>
+          <button class="zoom-btn" id="powershellZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="powershellResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C# Game Modal -->
+  <div id="csharpGameModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close csharp-game-close">&times;</span>
+      <div class="modal-header">
+        <h3>C# Konsol Tabanlı Zeka Oyunu</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="csharpGameWrapper">
+            <img id="csharpGameImage" src="img/mathgame5.png" alt="C# Zeka Oyunu">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="csharpGameZoomOut">-</button>
+          <span class="zoom-level" id="csharpGameZoomLevel">100%</span>
+          <button class="zoom-btn" id="csharpGameZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="csharpGameResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C# Password Modal -->
+  <div id="csharpPasswordModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close csharp-password-close">&times;</span>
+      <div class="modal-header">
+        <h3>C# Şifre Güçlendirme Uygulaması</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="csharpPasswordWrapper">
+            <img id="csharpPasswordImage" src="img/csharp-sifre.png" alt="C# Şifre Uygulaması">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="csharpPasswordZoomOut">-</button>
+          <span class="zoom-level" id="csharpPasswordZoomLevel">100%</span>
+          <button class="zoom-btn" id="csharpPasswordZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="csharpPasswordResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cosmic Game Modal -->
+  <div id="cosmicModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close cosmic-close">&times;</span>
+      <div class="modal-header">
+        <h3>4 Gezegenli Uzay Oyunu - Cosmic Descent</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="cosmicWrapper">
+            <img id="cosmicImage" src="img/CosmicDecsent0.png" alt="Cosmic Descent Uzay Oyunu">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="cosmicZoomOut">-</button>
+          <span class="zoom-level" id="cosmicZoomLevel">100%</span>
+          <button class="zoom-btn" id="cosmicZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="cosmicResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Poster Design Modal -->
+  <div id="posterModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close poster-close">&times;</span>
+      <div class="modal-header">
+        <h3>Afiş Tasarımı - Mercan Tenis</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="posterDesignWrapper">
+            <img id="posterDesignImage" src="img/Mercan Tenis.png" alt="Mercan Tenis Afiş Tasarımı">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="posterDesignZoomOut">-</button>
+          <span class="zoom-level" id="posterDesignZoomLevel">100%</span>
+          <button class="zoom-btn" id="posterDesignZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="posterDesignResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engelsiz Kariyer Modal -->
+  <div id="engelsizModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close engelsiz-close">&times;</span>
+      <div class="modal-header">
+        <h3>Engelsiz Kariyer Platformu</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="engelsizWrapper">
+            <img id="engelsizImage" src="img/Engelsiz Kariyer.png" alt="Engelsiz Kariyer Projesi">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="engelsizZoomOut">-</button>
+          <span class="zoom-level" id="engelsizZoomLevel">100%</span>
+          <button class="zoom-btn" id="engelsizZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="engelsizResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music AI Modal -->
+  <div id="musicModal" class="modal">
+    <div class="modal-content">
+      <span class="close music-close">&times;</span>
+      <div class="modal-header">
+        <h3>Yapay Zeka Tabanlı Müzik Üretimi</h3>
+      </div>
+      <div class="modal-body music-body">
+        <div class="music-research-content">
+          <div class="research-header">
+            <h4><strong>ÖZET</strong></h4>
+            <h5><em>Yapay Zeka Tabanlı Özgün Müzik Oluşturma Algoritmaları ve Latent Difüzyon</em></h5>
+          </div>
+          <div class="research-text">
+            <p>Son yıllarda yapay zeka tabanlı müzik üretimi önemli bir ilerleme kaydetmiştir. Ancak mevcut modeller, metin girdilerinden uzun süreli ve yapısal olarak tutarlı müzik parçaları üretmede sınırlıdır. Bu çalışmada, 21,5 Hz'lik düşük frekanslı gizli temsillere sahip bir difüzyon transformatörü kullanılarak, 4 dakika 45 saniyeye kadar süren müzik parçalarının üretimi için yeni bir yöntem önerilmektedir.</p>
+            
+            <p>Model, üç aşamadan oluşmakta olup, otomatik kodlayıcı, metin-ses koşullandırması için CLAP tabanlı bir kodlayıcı ve gizli difüzyon modelinden faydalanmaktadır. Bu yaklaşım, uzun biçimli müzik üretiminde zamansal bağlamın güçlü bir şekilde ele alınmasını sağlayarak hem yapısal tutarlılığı hem de estetik uyumu garanti eder.</p>
+            
+            <p>Ayrıca, modelin performansı, nicel ve nitel değerlendirmelerle detaylı bir şekilde analiz edilmiş ve daha önceki yaklaşımlara kıyasla önemli ölçüde üstün sonuçlar elde edilmiştir. Eğitim süreçlerinin verimliliği ve geniş bir veri setiyle desteklenen güçlü altyapısı, bu teknolojinin müzik üretiminde devrim niteliğinde bir adım olduğunu ortaya koymaktadır.</p>
+            
+            <p>Elde edilen sonuçlar, sanatçıların ve müzik prodüktörlerinin yaratıcı süreçlerini optimize etmeleri adına yeni araçlar sunmaktadır.</p>
+            
+            <p class="contact-note"><strong>Devamı için lütfen iletişime geçiniz.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Python Password Modal -->
+  <div id="pythonPasswordModal" class="modal">
+    <div class="modal-content poster-modal">
+      <span class="close python-password-close">&times;</span>
+      <div class="modal-header">
+        <h3>Python Tabanlı Şifre Aracı</h3>
+      </div>
+      <div class="modal-body poster-body">
+        <div class="poster-container">
+          <div class="poster-image-wrapper" id="pythonPasswordWrapper">
+            <img id="pythonPasswordImage" src="img/siffre.png" alt="Python Şifre Aracı">
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="pythonPasswordZoomOut">-</button>
+          <span class="zoom-level" id="pythonPasswordZoomLevel">100%</span>
+          <button class="zoom-btn" id="pythonPasswordZoomIn">+</button>
+          <button class="zoom-btn reset-btn" id="pythonPasswordResetZoom">Reset</button>
+        </div>
+        <div class="poster-instruction">
+          <p>🔍 Yakınlaştırmak için + butonunu kullanın • Sürükleyerek hareket ettirin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
