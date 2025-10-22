@@ -8,21 +8,202 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="dark">
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="img/M.png" alt="M Logo" class="logo-img">
-      <span class="logo-text">Mevlana Mert Çarlı</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="code-rain-toggle" class="code-icon-btn" title="Toggle Code Rain">&lt;/&gt;</button></li>
-      <li><button id="meteor-shower-toggle" class="meteor-icon-btn" title="Toggle Meteor Shower">☄️</button></li>
-    </ul>
-  </nav>
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="img/M.png" alt="M Logo" class="logo-img">
+    <span class="logo-text">Mevlana Mert Çarlı</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button id="code-rain-toggle" class="code-icon-btn" title="Toggle Code Rain">&lt;/&gt;</button>
+    </li>
+    <li>
+      <button id="meteor-shower-toggle" class="meteor-icon-btn" title="Toggle Meteor Shower">☄️</button>
+    </li>
+  </ul>
+
+  <!-- Hamburger menü ikonu -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<!-- 🔷 CSS -->
+<style>
+/* Navbar genel görünüm */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: linear-gradient(90deg, #0a1435, #0e1c50);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px; /* kare ama yumuşak köşeli */
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Menü bağlantıları */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5ab1ff;
+}
+
+/* Kod butonu */
+.code-icon-btn {
+  background: linear-gradient(135deg, #6a5acd, #483d8b);
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(106, 90, 205, 0.6);
+}
+
+.code-icon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(106, 90, 205, 0.9);
+}
+
+/* Meteor butonu */
+.meteor-icon-btn {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.6);
+}
+
+.meteor-icon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255, 126, 95, 0.9);
+}
+
+/* Hamburger menü */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  position: absolute;
+  top: 18px;
+  right: 25px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: linear-gradient(180deg, #0e1c50, #0a1435);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .code-icon-btn, .meteor-icon-btn {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  /* Hamburger X animasyonu */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+</style>
+
+<!-- 🔹 JS -->
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+</script>
 
   <!-- Sections -->
   <section id="home" class="section home-section">
